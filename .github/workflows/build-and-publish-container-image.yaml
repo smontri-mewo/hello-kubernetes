@@ -53,6 +53,11 @@ jobs:
 
       - name: Push image and tags to registry
         run: |
-          docker push $IMAGE:$IMAGE_VERSION
-          docker push $IMAGE:$IMAGE_MAJOR_VERSION
           docker push $IMAGE:$IMAGE_MAJOR_VERSION.$IMAGE_MINOR_VERSION
+      
+      - name: Call Helm pipeline
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.PAT }}
+          repository: Vahor/mewo-hello-kubernetes-helm
+          client-payload: '{"path": "hello-kubernetes", "tag": "$IMAGE_MAJOR_VERSION.$IMAGE_MINOR_VERSION"}'
