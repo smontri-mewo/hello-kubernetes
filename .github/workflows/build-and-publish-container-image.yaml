@@ -60,4 +60,5 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
           repository: Vahor/mewo-hello-kubernetes-helm
+          event-type: update-helm
           client-payload: '{"path": "hello-kubernetes", "tag": "$IMAGE_MAJOR_VERSION.$IMAGE_MINOR_VERSION"}'
