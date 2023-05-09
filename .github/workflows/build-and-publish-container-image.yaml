@@ -59,6 +59,8 @@ jobs:
       
       - name: update Helm
         run: |
+          git config --global user.name $GIT_USER
+          git config --global user.email $GIT_USER"@github.com"
           git clone https://smontri-mewo:${{ secrets.TOKEN }}@github.com/smontri-mewo/hello-helm.git
           ls hello-helm
           cd hello-helm
