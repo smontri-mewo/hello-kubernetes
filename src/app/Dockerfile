@@ -9,12 +9,12 @@ LABEL org.opencontainers.image.title="Hello Kubernetes!" \
       org.opencontainers.image.description="Provides a demo app to deploy to a Kubernetes cluster. It displays a message, the name of the pod and details of the node it is deployed to." \
       org.opencontainers.image.created=$IMAGE_CREATE_DATE \
       org.opencontainers.image.version=$IMAGE_VERSION \
-      org.opencontainers.image.authors="Stéphane Montri" \
-      org.opencontainers.image.url="https://hub.docker.com/r/smontrimewo/hello-kubernetes/" \
-      org.opencontainers.image.documentation="https://github.com/smontri-mewo/hello-kubernetes/README.md" \
-      org.opencontainers.image.vendor="Stéphane Montri" \
+      org.opencontainers.image.authors="Nathan David" \
+      org.opencontainers.image.url="https://hub.docker.com/r/vahor/mewo-hello-kubernetes/" \
+      org.opencontainers.image.documentation="https://github.com/vahor/mewo-hello-kubernetes/README.md" \
+      org.opencontainers.image.vendor="Nathan David" \
       org.opencontainers.image.licenses="MIT" \
-      org.opencontainers.image.source="https://github.com/smontri-mewo/hello-kubernetes.git" \
+      org.opencontainers.image.source="https://github.com/vahor/mewo-hello-kubernetes.git" \
       org.opencontainers.image.revision=$IMAGE_SOURCE_REVISION 
 
 # Create app directory
