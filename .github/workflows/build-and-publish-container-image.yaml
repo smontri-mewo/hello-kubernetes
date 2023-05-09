@@ -15,7 +15,7 @@ jobs:
       GIT_USER: vahor
       CONTAINER_REGISTRY: docker.io
       CONTAINER_IMAGE: vahor/hello-kubernetes
-      GIT_REPOSITORY: git@github.com:vahor/hello-kubernetes.git
+      GIT_REPOSITORY: git@github.com:vahor/mewo-hello-kubernetes.git
       CD_CHART_REPO: deploy/helm/hello-kubernetes
       CD_MANIFEST_FILE: Chart.yaml
 
